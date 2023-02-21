@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<h1>Calculator</h1>
+	<div class="calculator">
+		<input type="text" placeholder="0" id="result" readonly>
+		<table>
+			<tr>
+				<td><input type="button" value="7" onclick="appendToResult('7')"></td>
+				<td><input type="button" value="8" onclick="appendToResult('8')"></td>
+				<td><input type="button" value="9" onclick="appendToResult('9')"></td>
+				<td><input type="button" class="operator" value="/" onclick="appendToResult('/')"></td>
+				<td><input type="button" class="delete" value="&larr;" onclick="deleteCharacter()"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="appendToResult('4')"></td>
+				<td><input type="button" value="5" onclick="appendToResult('5')"></td>
+				<td><input type="button" value="6" onclick="appendToResult('6')"></td>
+				<td><input type="button" class="operator" value="*" onclick="appendToResult('*')"></td>
+				<td><input type="button" class="delete" value="C" onclick="clearResult()"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="appendToResult('1')"></td>
+				<td><input type="button" value="2" onclick="appendToResult('2')"></td>
+				<td><input type="button" value="3" onclick="appendToResult('3')"></td>
+<td><input type="button" class="operator" value="-" onclick="appendToResult('-')"></td>
+<td><input type="button" value="(" onclick="appendToResult('(')"></td>
+</tr>
+<tr>
+<td><input type="button" value="0" onclick="appendToResult('0')"></td>
+<td><input type="button" value="." onclick="appendToResult('.')"></td>
+<td><input type="button" class="operator" value="+" onclick="appendToResult('+')"></td>
+<td><input type="button" class="operator" value="=" onclick="calculateResult()"></td>
+<td><input type="button" value=")" onclick="appendToResult(')')"></td>
+</tr>
+</table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
